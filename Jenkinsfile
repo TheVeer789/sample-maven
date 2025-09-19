@@ -6,11 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Checkout2') {
-            steps {
-                git url: "${REPO_URL}", branch: 'master'
-            }
-        }
 
         stage('Build1') {
             steps {
@@ -21,6 +16,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn test'
+                echo "test success"
             }
         }
     }
