@@ -26,5 +26,5 @@ and the dependency:
 	</dependency>
 ```
 
-echo "hello webhook"
+echo "hello webhooks"
 
